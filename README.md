@@ -2,7 +2,7 @@
 
 A free, open-source repository containing essential sacred texts for devotees performing Chaitra and Sharad Navratri Pooja. 
 
-This project provides high-quality, easily accessible PDFs through a simple, mobile-optimized website to assist with daily recitation and spiritual practice.
+This project provides easily accessible PDFs through a simple, mobile-optimized website to assist with daily recitation and spiritual practice.
 
 ## 📖 Sacred Texts Included
 
