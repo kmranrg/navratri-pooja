@@ -60,7 +60,11 @@
             font-size: 2.5rem;
             color: var(--primary-color);
             margin-bottom: 0.5rem;
-            line-height: 1;
+            /* Increased line-height and explicit font-family prevent mobile clipping/emoji rendering */
+            line-height: 1.2; 
+            font-family: 'Arial', sans-serif; 
+            font-weight: normal;
+            display: inline-block;
         }
         .book-grid {
             display: grid;
@@ -109,6 +113,22 @@
         footer a {
             color: var(--primary-color);
             text-decoration: none;
+        }
+
+        /* --- Mobile Optimization --- */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.7rem; /* Prevents title from splitting */
+            }
+            header p {
+                font-size: 1rem;
+            }
+            .om-symbol {
+                font-size: 2rem;
+            }
+            .book-card {
+                padding: 1rem;
+            }
         }
     </style>
 </head>
