@@ -1,2 +1,2 @@
-# navratri-pooja
-Resources for Navratri Pooja
+# Navratri Pooja Sahitya
+Essential Sacred Texts for Chaitra and Sharad Navratri 
