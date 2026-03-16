@@ -56,20 +56,17 @@
             margin-bottom: 2rem;
             font-size: 1.1rem;
         }
-        .om-symbol {
-            font-size: 2.5rem;
-            color: var(--primary-color);
+        .om-icon {
+            width: 50px;
+            height: auto;
             margin-bottom: 0.5rem;
-            /* Increased line-height and explicit font-family prevent mobile clipping/emoji rendering */
-            line-height: 1.2; 
-            font-family: 'Arial', sans-serif; 
-            font-weight: normal;
             display: inline-block;
         }
         .book-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
+            margin-bottom: 3rem;
         }
         .book-card {
             background-color: var(--card-bg);
@@ -102,6 +99,44 @@
         .btn:hover {
             background-color: #E68A2E;
         }
+        
+        /* Table Styles */
+        .schedule-section {
+            background-color: var(--card-bg);
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+        .schedule-section h2 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 400px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #E0E0E0;
+        }
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #FFF3E0;
+        }
+
         footer {
             text-align: center;
             padding: 2rem 1rem;
@@ -115,19 +150,22 @@
             text-decoration: none;
         }
 
-        /* --- Mobile Optimization --- */
+        /* Mobile Adjustments */
         @media (max-width: 600px) {
             header h1 {
-                font-size: 1.7rem; /* Prevents title from splitting */
+                font-size: 1.7rem;
             }
             header p {
                 font-size: 1rem;
             }
-            .om-symbol {
-                font-size: 2rem;
+            .om-icon {
+                width: 35px;
             }
             .book-card {
                 padding: 1rem;
+            }
+            .schedule-section {
+                padding: 1.5rem 1rem;
             }
         }
     </style>
@@ -141,7 +179,7 @@
 
 <div class="container">
     <div class="intro">
-        <div class="om-symbol">ॐ</div>
+        <img src="om.svg" alt="Om Symbol" class="om-icon">
         <p>Welcome to this open repository of sacred texts used during the Navratri Pooja. These high-quality PDF resources are provided freely to help devotees in their spiritual practice. You can view or download the books below.</p>
     </div>
 
@@ -170,10 +208,62 @@
             <a href="Shama_Prarthana.pdf" class="btn" target="_blank" rel="noopener noreferrer">View / Download</a>
         </div>
     </div>
+
+    <div class="schedule-section">
+        <h2>Navratri Recitation Schedule</h2>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Shri Durga Saptashati Adhyaya</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Day 1</td>
+                        <td>Adhyaya 1</td>
+                    </tr>
+                    <tr>
+                        <td>Day 2</td>
+                        <td>Adhyayas 2, 3, and 4</td>
+                    </tr>
+                    <tr>
+                        <td>Day 3</td>
+                        <td>Adhyayas 5 and 6</td>
+                    </tr>
+                    <tr>
+                        <td>Day 4</td>
+                        <td>Adhyaya 7</td>
+                    </tr>
+                    <tr>
+                        <td>Day 5</td>
+                        <td>Adhyaya 8</td>
+                    </tr>
+                    <tr>
+                        <td>Day 6</td>
+                        <td>Adhyayas 9 and 10</td>
+                    </tr>
+                    <tr>
+                        <td>Day 7</td>
+                        <td>Adhyaya 11</td>
+                    </tr>
+                    <tr>
+                        <td>Day 8</td>
+                        <td>Adhyaya 12</td>
+                    </tr>
+                    <tr>
+                        <td>Day 9</td>
+                        <td>Adhyaya 13</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 
 <footer>
-    <p>Curated with devotion by <a href="https://github.com/kmranrg" target="_blank">Kumar Anurag</a>.</p>
+    <p>Curated with devotion by <a href="https://kmranrg.com" target="_blank">Kumar Anurag</a>.</p>
     <p>This is an open-source initiative. Feel free to share.</p>
 </footer>
 
